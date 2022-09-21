@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagementSystem.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagementSystem.CoreBusiness", "InventoryManagementSystem.CoreBusiness\InventoryManagementSystem.CoreBusiness.csproj", "{44BDC8A3-8073-498F-909E-018E9CAE1641}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InventoryManagementSystem.Plugins", "InventoryManagementSystem.Plugins", "{9AA1921A-5DCC-4521-8DEC-A6D2C9A1CAF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagementSystem.Plugins.InMemory", "InventoryManagementSystem.Plugins\InventoryManagementSystem.Plugins.InMemory\InventoryManagementSystem.Plugins.InMemory.csproj", "{BF3FB9A6-7344-42A2-8CBB-D0F03F595321}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{44BDC8A3-8073-498F-909E-018E9CAE1641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44BDC8A3-8073-498F-909E-018E9CAE1641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44BDC8A3-8073-498F-909E-018E9CAE1641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3FB9A6-7344-42A2-8CBB-D0F03F595321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3FB9A6-7344-42A2-8CBB-D0F03F595321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3FB9A6-7344-42A2-8CBB-D0F03F595321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3FB9A6-7344-42A2-8CBB-D0F03F595321}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF3FB9A6-7344-42A2-8CBB-D0F03F595321} = {9AA1921A-5DCC-4521-8DEC-A6D2C9A1CAF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B25852D0-E319-4BEA-BFCD-74FA31EDDCAB}

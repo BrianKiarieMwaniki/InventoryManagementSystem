@@ -1,9 +1,10 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Test Page</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+<ul>
+    @foreach (var inventory in _inventories)
+    {
+        <li>@inventory.InventoryName</li>
+    }
+</ul>
