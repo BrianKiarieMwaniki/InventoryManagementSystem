@@ -1,0 +1,22 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (inventories != null && inventories.Count() > 0)
+        {
+            foreach (var inventory in GetInventories())
+            {
+                <InventoryListItemComponent Inventory="inventory" />
+            }
+        }
+    </tbody>
+</table>
+
+
+
