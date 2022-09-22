@@ -14,10 +14,6 @@ namespace InventoryManagementSystem.ClientApp.Controls
         [Parameter]
         public string SearchString { get; set; }
 
-        //protected override async Task OnParametersSetAsync()
-        //{
-        //    inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync(SearchString)).ToList();
-        //}
 
         protected override async Task OnInitializedAsync()
         {

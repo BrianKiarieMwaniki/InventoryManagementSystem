@@ -1,10 +1,7 @@
 ﻿@page "/"
 
-<PageTitle>Test Page</PageTitle>
+<SearchInventoryComponent SearchObject="@SearchObject" />
 
-<ul>
-    @foreach (var inventory in _inventories)
-    {
-        <li>@inventory.InventoryName</li>
-    }
-</ul>
+<br />
+
+<InventoryListComponent SearchString="@SearchObject.SearchString" />

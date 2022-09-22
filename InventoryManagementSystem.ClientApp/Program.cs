@@ -1,17 +1,14 @@
-using InventoryManagementSystem.ClientApp.Data;
 using InventoryManagementSystem.Plugins.InMemory;
 using InventoryManagementSystem.UseCases.Inventories;
 using InventoryManagementSystem.UseCases.Inventories.Interfaces;
 using InventoryManagementSystem.UseCases.PluginInterface;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
 
 builder.Services.AddTransient<IInventoryRepository, InventoryRepository>();
 
