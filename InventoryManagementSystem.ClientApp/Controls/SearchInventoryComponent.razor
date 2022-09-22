@@ -1,0 +1,15 @@
+﻿
+<div class="input-group">
+    <input @bind-value="@SearchObject.SearchString" @bind-value:event="oninput" type="text" class="form-control" placeholder="Type inventory name here to search"/>
+    <button class="btn btn-success input-group-text" @onclick="HandleOnSearch">Search</button>
+</div>
+
+@code {
+    [Parameter]
+    public SearchObject? SearchObject { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnSearch{ get; set; }
+
+    async Task HandleOnSearch() => await OnSearch.InvokeAsync(SearchObject?.SearchString);
+}

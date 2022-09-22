@@ -9,6 +9,7 @@ namespace InventoryManagementSystem.UseCases.PluginInterface
 {
     public interface IInventoryRepository
     {
+        Task<IEnumerable<Inventory>> GetAllInventoriesAsync();
         Task<IEnumerable<Inventory>> GetInventoriesByName(string name);
     }
 }
