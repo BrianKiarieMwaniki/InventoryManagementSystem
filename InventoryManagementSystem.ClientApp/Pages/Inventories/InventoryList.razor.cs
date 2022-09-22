@@ -5,9 +5,9 @@ using System.Runtime.CompilerServices;
 
 namespace InventoryManagementSystem.ClientApp.Pages.Inventories
 {
-    public partial class InventoryList : ComponentBase
+    public partial class InventoryList : ComponentBase, IDisposable
     {
-        private SearchObject SearchObject;
+        private SearchObject SearchObject;       
 
         protected override async Task OnInitializedAsync()
         {
@@ -20,6 +20,11 @@ namespace InventoryManagementSystem.ClientApp.Pages.Inventories
         private void HandleSearchObjectPropertyChanged(object? sender, PropertyChangedEventArgs e)
         {
             StateHasChanged();
+        }
+
+        public void Dispose()
+        {
+            SearchObject.PropertyChanged -= HandleSearchObjectPropertyChanged;
         }
     }
 }
