@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryManagementSystem.Plugins\InventoryManagementSystem.Plugins.InMemory\InventoryManagementSystem.Plugins.InMemory.csproj" />
+    <ProjectReference Include="..\InventoryManagementSystem.UseCases\InventoryManagementSystem.UseCases.csproj" />
+  </ItemGroup>
+
 </Project>
